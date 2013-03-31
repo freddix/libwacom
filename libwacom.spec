@@ -1,11 +1,11 @@
 Summary:	Wacom model feature query library
 Name:		libwacom
-Version:	0.6.1
+Version:	0.7
 Release:	1
 License:	MIT
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/linuxwacom/%{name}-%{version}.tar.bz2
-# Source0-md5:	b1193c0e1e5400b2f1c97cf8fbee3ff3
+# Source0-md5:	7fe2b0ff676fd7a48ebae3b69314eaf7
 URL:		http://linuxwacom.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
