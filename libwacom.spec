@@ -1,11 +1,11 @@
 Summary:	Wacom model feature query library
 Name:		libwacom
-Version:	0.7.1
+Version:	0.10
 Release:	1
 License:	MIT
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/linuxwacom/%{name}-%{version}.tar.bz2
-# Source0-md5:	d11981432144837a29ab2189a2fa0575
+# Source0-md5:	092b816687ed5ede62421573a89332a5
 URL:		http://linuxwacom.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -47,6 +47,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
